@@ -1,3 +1,5 @@
+// adding comment to test pushing update version of docker image to AWS ECR
+
 let express = require('express');
 let path = require('path');
 let fs = require('fs');
