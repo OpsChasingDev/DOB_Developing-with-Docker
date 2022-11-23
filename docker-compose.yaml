@@ -1,9 +1,9 @@
 version: '3'
 services:
-  # my-app:
-    # image: ${docker-registry}/my-app:1.0
-    # ports:
-     # - 3000:3000
+  my-app:
+    image: 718318228454.dkr.ecr.us-east-1.amazonaws.com/my-app:latest
+    ports:
+     - 3000:3000
   mongodb:
     image: mongo
     ports:
@@ -24,6 +24,6 @@ services:
      - ME_CONFIG_MONGODB_SERVER=mongodb
     depends_on:
      - "mongodb"
-volumes:
-  mongo-data:
-    driver: local
+# volumes:
+#   mongo-data:
+#     driver: local
